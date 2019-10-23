@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block block_body %}
+    <div class="jumbotron text-center">
+        <h3>Yazılım Bilimi Bloğuna hoşgeldiniz</h3>
+        <p>Bu blokta gelistiriciler olarak blog yazilarinizi paylasabilir ve insanlara yardimci olabilirsiniz! </p>
+    </div>
+
+    {% if answer == "evet" %}
+        <p>Cevabiniz ne yazikki Evet!</p>
+    {% elif answer == "eh" %}
+        <p>Cevabiniz ne yazikki Eh!</p>
+    {% else %}
+        <p>Cevabiniz ne yazikki Hayir!</p>
+    {% endif %}
+
+{% endblock block_body %}

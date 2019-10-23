@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block block_body %}
+    <h3>Hakkimizda</h3>
+    <hr>
+        Merhaba,<br>
+        Ben Coşkun Taşdemir , elektronik mühendisiyim. Bu sitede başta gömülü sistemler olmak üzere değişik konularda yazılarımı
+        sizlerle paylaşıyorum. Gömülü sistemler konusunun çok önemli olduğunu düşünüyor ve bu konunun ülkemizde mümkün olduğunca
+        tanınması için ufak da olsa katkıda bulunmak istiyorum.
+        Üniversite yıllarımda tanıştığım dijital elektronik ve mikroişlemcilerin o harika dünyasını keşfettikten sonra bu alana
+        odaklandım. Üniversite mezuniyeti ve askerlik görevi sonrası bir savunma sanayi firmasında İnsansız Hava Aracı
+        projelerinde gömülü yazılım mühendisi olarak çalıştım. Bu süre zarfında hem ülkemizde daha yeni yeni oluşan harika bir
+        alanda çalışma fırsatı buldum hem de görev-kritik gömülü sistemler alanında tecrübe kazandım. Yıldız Teknik
+        Üniversitesi’nde Kontrol ve Otomasyon Mühendisliği üzerine, Bilgi Üniversitesi’nde de İş yönetimi (MBA) üzerine yüksek
+        lisans derecelerim var.
+        Gömülü sistemler ve gömülü yazılımlar konularında eğitimler veriyorum. Ayrıca yeni ürün geliştirme ve ar-ge konularında
+        KOBİ ve Start-up firmalara danışmanlık yapıyorum.
+        Blogumdaki yazılarla ilgili veya diğer konularda görüşlerinizi bana iletebilirsiniz.
+        Kurumsal Proje danışmanlığı ve eğitimler için benimle iletişim formu üzerinden iletişime geçebilirsiniz.
+    <hr>
+
+    <ul>
+        {% for warnIndex in warningList %}
+            <li> {{ warnIndex }}</li>
+        {% endfor %}
+
+        <hr>
+
+        {% for article in articles %}
+            <li>Article Id : {{ article.Id }} - Title : {{ article.title }} - Article Id : {{ article.content }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock block_body %}

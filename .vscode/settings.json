@@ -1,0 +1,5 @@
+{
+    "files.associations": {"*.html":"html"},
+    "html.format.indentInnerHtml": true,
+    "python.formatting.provider": "autopep8"
+}
